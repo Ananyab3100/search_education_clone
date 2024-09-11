@@ -1,0 +1,19 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.button-border {
+  position: relative;
+}
+
+.button-border::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 75%; 
+  border-right: 2px solid white; 
+  z-index: 1;
+}
